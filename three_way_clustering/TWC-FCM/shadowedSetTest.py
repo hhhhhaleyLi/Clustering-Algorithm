@@ -2,10 +2,11 @@
 # 开发时间: 2021/11/12 19:23
 import numpy as np
 import sys
+import time
 
 # b = 1 - a
 def shadowedSet(u, k):
-    min = sys.maxsize
+    min = sys.maxsize   # 获取int类型的最大值  等价于Java中的Integer.MAX_VALUE
     a_optional = []
     resulta = 0
     for i in range(0, k):
